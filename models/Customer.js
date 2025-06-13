@@ -4,13 +4,15 @@ const customerSchema = new mongoose.Schema(
   {
     firstName: {
       type: String,
-      required: true,
+      required: false,
       trim: true,
+      default: ""
     },
     lastName: {
       type: String,
-      required: true,
+      required: false,
       trim: true,
+      default: ""
     },
     email: {
       type: String,
@@ -20,8 +22,8 @@ const customerSchema = new mongoose.Schema(
       trim: true,
     },
     profilePicture: {
-      type: String, // URL of uploaded image
-      default: '',   // Optional: you can set a default avatar URL here
+      type: String, 
+      default: '',   
     },
     password: {
       type: String,

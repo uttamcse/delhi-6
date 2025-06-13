@@ -1,6 +1,11 @@
 const { createRouter } = require("../utils/routerHelper");
 const HttpMethods = require("../utils/httpMethods");
-const { createAccount, verifyOtp, refreshAccessToken } = require("../controllers/logInController");
+const {  
+  createAccount,
+  loginAccount,
+  refreshAccessToken,
+
+ } = require("../controllers/logInController");
 
 // OTP routes
 const routes = [
@@ -10,9 +15,9 @@ const routes = [
       handlers: [createAccount],
     },
     {
-      method: HttpMethods.PUT,
-      path: "/otp/verify",
-      handlers: [verifyOtp],
+      method: HttpMethods.POST,
+      path: "/login",
+      handlers: [loginAccount],
     },
     {
       method: HttpMethods.POST,
