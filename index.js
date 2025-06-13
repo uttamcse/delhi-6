@@ -17,6 +17,7 @@ app.use(express.static('public'));
 app.use('/', require('./routes/indexRoutes'));
 app.use('/', require('./routes/logInRoutes'));
 app.use('/', require('./routes/customerDetailsRoutes'));
+app.use('/', require('./routes/blogRoutes'))
 
 // HTTP server
 const server = http.createServer(app);
