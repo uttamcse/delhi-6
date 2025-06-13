@@ -1,0 +1,36 @@
+{
+  "name": "investsense-backend",
+  "version": "1.0.0",
+  "description": "InvestSense API in `Node.js`",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EkamTek Software LLP",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@google-cloud/storage": "^7.14.0",
+    "axios": "^1.8.2",
+    "body-parser": "^1.20.3",
+    "cashfree-payout": "^0.0.14",
+    "cashfree-pg": "^4.3.10",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-admin": "^13.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.48",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.9.2",
+    "multer": "^1.4.5-lts.1",
+    "node-cache": "^5.1.2",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2",
+    "socket.io": "^4.8.1",
+    "undici": "^7.3.0",
+    "util": "^0.12.5"
+  }
+}
